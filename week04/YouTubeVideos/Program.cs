@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         List<Video> videos = new List<Video>();
-        Video video1 = new Video("Someething", "Mr.Morti", 546);
+        Video video1 = new Video("Something", "Mr.Marti", 546);
         Video video2 = new Video("Where ca i find peace", "Leonard", 762);
         Video video3 = new Video("Do you love Me?", "Faith", 386);
         Video video4 = new Video("Who is He?", "Truth", 467);
