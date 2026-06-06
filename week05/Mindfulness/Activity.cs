@@ -1,10 +1,14 @@
 public class Activity
 {
+    // Protected attributes: accessible within this class and its derived classes
     protected string _name = "";
     protected string _description ="";
     protected int _duration = 0;
+
+    // List of characters used to create the loading/spinner animation
     protected List<string> animationStrings = new List<string> { "|", "/", "-", "\\" };
 
+    // Constructor to initialize common attributes for all activities
     public Activity (string name, string description)
     {
         _name = name;
@@ -26,11 +30,14 @@ public class Activity
         System.Console.WriteLine($"you have completed another {_duration} seconds of the {_name}");
         ShowSpinner(3);
     }
+    // Generates a spinning animation for a specific number of seconds
     public void ShowSpinner(int spin)
     {
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(spin);
         int i = 0;
+
+        // Loop runs until the specified amount of seconds has passed
         while (DateTime.Now < endTime)
         {
             string s = animationStrings[i];
@@ -45,6 +52,8 @@ public class Activity
             }
         }
     }
+    
+    // Displays a numeric countdown timer (e.g., 5... 4... 3...)
     public void ShowCountDown(int seconds)
     {
         for (int i = seconds; i > 0; i--)
