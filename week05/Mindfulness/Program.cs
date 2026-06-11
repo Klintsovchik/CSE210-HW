@@ -46,6 +46,7 @@ class Program
                     Console.WriteLine("Invalid choice. Please try again.");
                     Thread.Sleep(2000);
                     break;
+                    
             }
         }
     }
