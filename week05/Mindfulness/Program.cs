@@ -2,10 +2,12 @@ class Program
 {
     static void Main(string[] args)
     {
+        // This boolean controls the lifecycle of the main application menu loop 
         bool keepRunning = true;
 
         while (keepRunning)
         {
+            // Clears the console window for a clean and professional user interface presentation
             Console.Clear();
             Console.WriteLine("Menu Options:");
             Console.WriteLine("  1. Start breathing activity");
@@ -14,6 +16,7 @@ class Program
             Console.WriteLine("  4. Quit");
             Console.Write("Select a choice from the menu: ");
 
+            // Captures the user's input from the console
             string choice = Console.ReadLine();
 
             switch (choice)
