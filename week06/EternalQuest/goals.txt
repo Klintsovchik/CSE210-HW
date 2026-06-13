@@ -1,0 +1,2 @@
+0
+SimpleGoal: sgd,wg,10,False
